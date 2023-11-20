@@ -82,4 +82,18 @@ pub fn main() {
 Tiler also includes examples of additional functionalities, such as AST creation and serialization.
 
 
-Feel free to explore the functionalities provided by Tiler for efficient code conversion across various programming languages. For more information, refer to the UParseTree repository for the universal parser tree implementation.
+## Tiler Configuration: rust-rust.tile.json
+
+The `rust-rust.tile.json` file is a configuration file for Tiler, defining rules and specifications for transpiling Rust code to Rust code. It provides details about the file type, version, scope, features, dependencies, and transformation rules.
+
+## Tiler Configuration: rust.lngsyntax.json
+
+The `rust.lngsyntax.json` file is a configuration file for Tiler. This file is like tokenizer of language and outlining the syntax and structural elements of the Rust programming language.
+
+## Tiler Configuration: rust.struct.lngsyntax.json
+
+The `rust.struct.lngsyntax.json` file is a specialized configuration for Tiler. It contain regex specific parsing rules. This file enhances Tiler's ability to parse and transpile Rust code, with detailed rules for struct definitions, attributes, visibility, generics, and more.
+
+### Note
+
+These configuration files are crucial for accurate parsing and transpilation of given programs into other programming languages. Customize this file based on specific language syntax requirements or extensions in Rust code.
