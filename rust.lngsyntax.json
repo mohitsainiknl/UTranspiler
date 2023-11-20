@@ -1,0 +1,516 @@
+{
+    "information_for_contributors": [
+        "One-info",
+        "Two-info"
+    ],
+    "fileType": ".rs",
+    "version": "1.0.0",
+    "name": "Rust",
+    "scope": "rust.source",
+    "comments": "#comments",
+    "features": {
+        "comments": {
+            
+        }
+    },
+    "information saparate-file": {
+        "formatting": {
+            "rust.space" : "\\s"
+        },
+        "checking": {
+            "rust.ident.lowercase"             : "()",
+            "rust.ident.UPPERCASE"             : "()",
+            "rust.ident.PascalCase"            : "()",
+            "rust.ident.camelCase"             : "()",
+            "rust.ident.snake_case"            : "()",
+            "rust.ident.SCREAMING_SNAKE_CASE"  : "()",
+            "rust.ident.kebab-case"            : "()",
+            "rust.ident.SCREAMING-KEBAB-CASE"  : "()",
+
+            "struct.token.declaration.struct.rust"  : "(?#[rust.ident.PascalCase])"
+        },
+        "highlighting": {
+            "": ""
+        },
+        "snippeting": {
+            "": ""
+        }
+    },
+    "globals": {
+        "rust.space": "\\s+(?#[$contexts.comments])(?#Spacing and Minimum version for indentation)",
+
+        "rust.delimiter.brace.begin"    : "{",
+        "rust.delimiter.brace.end"      : "}",
+        "rust.delimiter.bracket.begin"  : "[",
+        "rust.delimiter.bracket.end"    : "]",
+        "rust.delimiter.paren.begin"    : "(",
+        "rust.delimiter.paren.end"      : ")",
+        "rust.delimiter.group"          : " ",
+
+        "rust.punctuation.comma"        : ",",
+        "rust.punctuation.semi"         : ";",
+        "rust.punctuation.colon"        : ":",
+
+        "rust.comment.line"  : "",
+        "rust.comment.block" : "",
+        "rust.comment.li"    : "",
+
+        "rust.key"               : "(?#[rust.keyword.* - rust.keyword.box, rust.token.*] (keyword, token) ((keyword|)* (keyword)) )",
+
+        "rust.keywords"          : "(abstract|as|async|auto|await|become|box|break|const|continue|crate|default|do|dyn|else|enum|extern|final|fn|for|if|impl|in|let|loop|macro|match|mod|move|mut|override|priv|pub|ref|return|Self|self|static|struct|super|trait|try|type|typeof|union|unsafe|unsized|use|virtual|where|while|yield)",
+        "rust.identifier"        : "([a-zA-Z0-9_]+)",
+
+        "rust.keyword.abstract"     : "abstract",
+        "rust.keyword.as"           : "as",
+        "rust.keyword.async"        : "async",
+        "rust.keyword.auto"         : "auto",
+        "rust.keyword.await"        : "await",
+        "rust.keyword.become"       : "become",
+        "rust.keyword.box"          : "box",
+        "rust.keyword.break"        : "break",
+        "rust.keyword.const"        : "const",
+        "rust.keyword.continue"     : "continue",
+        "rust.keyword.crate"        : "crate",
+        "rust.keyword.default"      : "default",
+        "rust.keyword.do"           : "do",
+        "rust.keyword.dyn"          : "dyn",
+        "rust.keyword.else"         : "else",
+        "rust.keyword.enum"         : "enum",
+        "rust.keyword.extern"       : "extern",
+        "rust.keyword.final"        : "final",
+        "rust.keyword.fn"           : "fn",
+        "rust.keyword.for"          : "for",
+        "rust.keyword.if"           : "if",
+        "rust.keyword.impl"         : "impl",
+        "rust.keyword.in"           : "in",
+        "rust.keyword.let"          : "let",
+        "rust.keyword.loop"         : "loop",
+        "rust.keyword.macro"        : "macro",
+        "rust.keyword.match"        : "match",
+        "rust.keyword.mod"          : "mod",
+        "rust.keyword.move"         : "move",
+        "rust.keyword.mut"          : "mut",
+        "rust.keyword.override"     : "override",
+        "rust.keyword.priv"         : "priv",
+        "rust.keyword.pub"          : "pub",
+        "rust.keyword.ref"          : "ref",
+        "rust.keyword.return"       : "return",
+        "rust.keyword.selfType"     : "Self",
+        "rust.keyword.selfValue"    : "self",
+        "rust.keyword.static"       : "static",
+        "rust.keyword.struct"       : "struct",
+        "rust.keyword.super"        : "super",
+        "rust.keyword.trait"        : "trait",
+        "rust.keyword.try"          : "try",
+        "rust.keyword.type"         : "type",
+        "rust.keyword.typeof"       : "typeof",
+        "rust.keyword.union"        : "union",
+        "rust.keyword.unsafe"       : "unsafe",
+        "rust.keyword.unsized"      : "unsized",
+        "rust.keyword.use"          : "use",
+        "rust.keyword.virtual"      : "virtual",
+        "rust.keyword.where"        : "where",
+        "rust.keyword.while"        : "while",
+        "rust.keyword.yield"        : "yield",
+
+        "rust.token.add"          : "+",
+        "rust.token.addEq"        : "+=",
+        "rust.token.and"          : "&",
+        "rust.token.andAnd"       : "&&",
+        "rust.token.andEq"        : "&=",
+        "rust.token.at"           : "@",
+        "rust.token.bang"         : "!",
+        "rust.token.caret"        : "^",
+        "rust.token.caretEq"      : "^=",
+        "rust.token.colon"        : ":",
+        "rust.token.colon2"       : "::",
+        "rust.token.comma"        : ",",
+        "rust.token.div"          : "/",
+        "rust.token.divEq"        : "/=",
+        "rust.token.dollar"       : "$",
+        "rust.token.dot"          : ".",
+        "rust.token.dot2"         : "..",
+        "rust.token.dot3"         : "...",
+        "rust.token.dotDotEq"     : "..=",
+        "rust.token.eq"           : "=",
+        "rust.token.eqEq"         : "==",
+        "rust.token.ge"           : ">=",
+        "rust.token.gt"           : ">",
+        "rust.token.le"           : "<=",
+        "rust.token.lt"           : "<",
+        "rust.token.mulEq"        : "*=",
+        "rust.token.ne"           : "!=",
+        "rust.token.or"           : "|",
+        "rust.token.orEq"         : "|=",
+        "rust.token.orOr"         : "||",
+        "rust.token.pound"        : "#",
+        "rust.token.question"     : "?",
+        "rust.token.rArrow"       : "->",
+        "rust.token.lArrow"       : "<-",
+        "rust.token.rem"          : "%",
+        "rust.token.remEq"        : "%=",
+        "rust.token.fatArrow"     : "=>",
+        "rust.token.semi"         : ";",
+        "rust.token.shl"          : "<<",
+        "rust.token.shlEq"        : "<<=",
+        "rust.token.shr"          : ">>",
+        "rust.token.shrEq"        : ">>=",
+        "rust.token.star"         : "*",
+        "rust.token.sub"          : "-",
+        "rust.token.subEq"        : "-=",
+        "rust.token.tilde"        : "~",
+        "rust.token.underscore"   : "_",
+
+        "rust.oprator.binary.add"        : "(?#[rust.token.add     ])(?# The `+`   operator (addition)                 )",
+        "rust.oprator.binary.sub"        : "(?#[rust.token.sub     ])(?# The `-`   operator (subtraction)              )",
+        "rust.oprator.binary.mul"        : "(?#[rust.token.star    ])(?# The `*`   operator (multiplication)           )",
+        "rust.oprator.binary.div"        : "(?#[rust.token.div     ])(?# The `/`   operator (division)                 )",
+        "rust.oprator.binary.rem"        : "(?#[rust.token.rem     ])(?# The `%`   operator (modulus)                  )",
+        "rust.oprator.binary.and"        : "(?#[rust.token.andAnd  ])(?# The `&&`  operator (logical and)              )",
+        "rust.oprator.binary.or"         : "(?#[rust.token.orOr    ])(?# The `||`  operator (logical or)               )",
+        "rust.oprator.binary.bitXor"     : "(?#[rust.token.caret   ])(?# The `^`   operator (bitwise xor)              )",
+        "rust.oprator.binary.bitAnd"     : "(?#[rust.token.and     ])(?# The `&`   operator (bitwise and)              )",
+        "rust.oprator.binary.bitOr"      : "(?#[rust.token.or      ])(?# The `|`   operator (bitwise or)               )",
+        "rust.oprator.binary.shl"        : "(?#[rust.token.shl     ])(?# The `<<`  operator (shift left)               )",
+        "rust.oprator.binary.shr"        : "(?#[rust.token.shr     ])(?# The `>>`  operator (shift right)              )",
+        "rust.oprator.binary.eq"         : "(?#[rust.token.eqEq    ])(?# The `==`  operator (equality)                 )",
+        "rust.oprator.binary.lt"         : "(?#[rust.token.lt      ])(?# The `<`   operator (less than)                )",
+        "rust.oprator.binary.le"         : "(?#[rust.token.le      ])(?# The `<=`  operator (less than or equal to)    )",
+        "rust.oprator.binary.ne"         : "(?#[rust.token.ne      ])(?# The `!=`  operator (not equal to)             )",
+        "rust.oprator.binary.ge"         : "(?#[rust.token.ge      ])(?# The `>=`  operator (greater than or equal to) )",
+        "rust.oprator.binary.gt"         : "(?#[rust.token.gt      ])(?# The `>`   operator (greater than)             )",
+        "rust.oprator.binary.addEq"      : "(?#[rust.token.addEq   ])(?# The `+=`  operator                            )",
+        "rust.oprator.binary.subEq"      : "(?#[rust.token.subEq   ])(?# The `-=`  operator                            )",
+        "rust.oprator.binary.mulEq"      : "(?#[rust.token.mulEq   ])(?# The `*=`  operator                            )",
+        "rust.oprator.binary.divEq"      : "(?#[rust.token.divEq   ])(?# The `/=`  operator                            )",
+        "rust.oprator.binary.remEq"      : "(?#[rust.token.remEq   ])(?# The `%=`  operator                            )",
+        "rust.oprator.binary.bitXorEq"   : "(?#[rust.token.caretEq ])(?# The `^=`  operator                            )",
+        "rust.oprator.binary.bitAndEq"   : "(?#[rust.token.andEq   ])(?# The `&=`  operator                            )",
+        "rust.oprator.binary.bitOrEq"    : "(?#[rust.token.orEq    ])(?# The `|=`  operator                            )",
+        "rust.oprator.binary.shlEq"      : "(?#[rust.token.shlEq   ])(?# The `<<=` operator                            )",
+        "rust.oprator.binary.shrEq"      : "(?#[rust.token.shrEq   ])(?# The `>>=` operator                            )",
+
+        "rust.oprator.unary.deref"       : "(?#[rust.token.star    ])(?# The `*` operator for dereferencing     )",
+        "rust.oprator.unary.not"         : "(?#[rust.token.bang    ])(?# The `!` operator for logical inversion )",
+        "rust.oprator.unary.neg"         : "(?#[rust.token.sub     ])(?# The `-` operator for negation          )"
+
+    },
+    "comment": "group allowed in root of the file",
+    "patterns": [
+        {
+            "include": "#function-defination"
+        }
+    ],
+    "repository": {
+        "function-defination": {
+            "comments": [
+                "Function Definition",
+                "fn name() {}"
+            ],
+            "scope": "rust.funcation.defination",
+            "match": "(?#<fn-keyword>)(?#<identifier>)(?#<block>)",
+            "links": {
+                "fn-keyword": {
+                    "scope": "rust.function.keyword.function",
+                    "match": "(?#[rust.keyword.fn])"
+                },
+                "identifier": {
+                    "scope": "rust.function.identifier",
+                    "match": "(?#[rust.identifier])"
+                },
+                "block": {
+                    "scope": "rust.function.block",
+                    "patterns": {
+                        "comment": "access (rust.function.defination rust.block.*)",
+                        "include": "#block"
+                    }
+                }
+            }
+        },
+        "block": {
+            "comment": [
+                "block { statements }"
+            ],
+            "scope": "rust.block",
+            "begin": "(?#[rust.delimiter.brace.begin])(?#[rust.space])",
+            "beginCaptures": {
+                "1": "rust.block.delimiter.begin"
+            },
+            "end": "(?#[rust.delimiter.brace.end])(?#[rust.space])",
+            "endCaptures": {
+                "1": "rust.block.delimiter.end"
+            },
+            "patterns": {
+                "comment": [
+                    "statements = (statement)*"
+                ],
+                "scope": "rust.block.statements",
+                "match": "((?#<statement>))*",
+                "links": {
+                    "statement": {
+                        "patterns": "#statement"
+                    }
+                }
+            }
+        },
+        "statement": {
+            "scope": "rust.statement",
+            "patterns": [
+                {
+                    "comments": [
+                        "A local `let` binding: `let x: u64 = s.parse()?`"
+                    ],
+                    "scope": "rust.statement.local",
+                    "match": "(?#<letKeyword>)(?#<pattern>)(?#<init>)(?#<semiColon>)",
+                    "links": {
+                        "letKeyword": {
+                            "match": "(?#[rust.keyword.let])(?#[rust.space])",
+                            "captures": {
+                                "1": "rust.statement.local.keyword.let"
+                            }
+                        },
+                        "pattern": {
+                            "patterns": {
+                                "include": "#pattern"
+                            }
+                        },
+                        "init": {
+                            "patterns": {
+                                "include": "#initialization"
+                            }
+                        },
+                        "semiColon": {
+                            "match": "(?#[rust.token.semi])(?#[rust.space])",
+                            "captures": {
+                                "1": "rust.statement.local.token.semi"
+                            }
+                        }
+                    }
+                },
+                {
+                    "comments": "comment",
+                    "scope": "rust.statement.item",
+                    "patterns": [
+                        {
+                            "include": "#function-defination"
+                        }
+                    ]
+                },
+                {
+                    "comments": "comment",
+                    "patterns": {
+                        "include": "#expression"
+                    }
+                },
+                {
+                    "comments": "comment",
+                    "scope": "rust.statement.semi",
+                    "match": "(?#<expression>)(?#[rust.token.semi])",
+                    "captures": {
+                        "2": "rust.statement.semi.token.semi"
+                    },
+                    "links": {
+                        "expression": {
+                            "patterns": {
+                                "include": "#expression"
+                            }
+                        }
+                    }
+                }
+            ]
+        },
+        "pattern": {
+            "scope": "rust.pattern",
+            "patterns": [
+                {
+                    "comments": [
+                        "A type ascription pattern: `foo: f64`"
+                    ],
+                    "scope": "rust.pattern.type",
+                    "match": "(?#<pattern>)(?#[rust.token.colon])(?#<type>)",
+                    "captures": {
+                        "2": "rust.pattern.type.token.colon"
+                    },
+                    "links": {
+                        "pattern": {
+                            "include": "rust.pattern"
+                        },
+                        "type": {
+                            "include": "#type"
+                        }
+                    }
+                }
+            ]
+        },
+        "type": {
+            "scope": "rust.type",
+            "patterns": [
+                {
+                    "comments": [
+                        "A path like `std::slice::Iter`",
+                        "optionally qualified with a self-type as in `<Vec<T> as SomeTrait>::Associated`"
+                    ],
+                    "scope": "rust.type.path",
+                    "match": "(?#<path>)",
+                    "links": {
+                        "path": {
+                            "patterns": {
+                                "include": "#path"
+                            }
+                        }
+                    }
+                }
+            ]
+        },
+        "path": {
+            "comments": [
+                "A path at which a named item is exported (e.g. `std::collections::HashMap`)"
+            ],
+            "scope": "rust.path",
+            "match": "((?#<segment>)(?#[rust.token.colon2]))*(?#<segment>)",
+            "captures": {
+                "2": "rust.path.token.colon2"
+            },
+            "links": {
+                "segment": {
+                    "comments": [
+                        "A segment of a path together with any path arguments on that segment"
+                    ],
+                    "scope": "rust.path.segment",
+                    "match": "(?#<identifier>)",
+                    "links": {
+                        "identifier": {
+                            "scope": "rust.path.segment.identifier",
+                            "match": "(?#[rust.identifier])"
+                        }
+                    }
+                }
+            }
+
+        },
+        "initialization": {
+            "scope": "rust.init",
+            "match": "(?#[rust.token.eq])(?#<expression>)",
+            "captures": {
+                "1": "rust.init.token.eq"
+            },
+            "links": {
+                "expression": {
+                    "patterns": {
+                        "include": "#expression"
+                    }
+                }
+            }
+        },
+        "expression": {
+            "scope": "rust.expression",
+            "patterns": [
+                {
+                    "comments": [
+                        "An assignment expression: `a = compute()`"
+                    ],        
+                    "scope": "rust.expression.assign",
+                    "match": "(?#<left>)(?#[rust.token.eq])(?#<right>)",
+                    "captures": {
+                        "2": "rust.expression.assign.token.eq"
+                    },
+                    "links": {
+                        "left": {
+                            "scope": "rust.expression.assign.left",
+                            "patterns": {
+                                "include": "#expression"
+                            }
+                        },
+                        "right": {
+                            "scope": "rust.expression.assign.right",
+                            "patterns": {
+                                "include": "#expression"
+                            }
+                        }
+                    }
+                },
+                {
+                    "comments": [
+                        "A compound assignment expression: `counter += 1`"
+                    ],        
+                    "scope": "rust.expression.assignOp",
+                    "match": "(?#<left>)(?#[rust.operator.binary.*])(?#<right>)",
+                    "captures": {
+                        "2": "rust.expression.assignOp.operator.binary"
+                    },
+                    "links": {
+                        "left": {
+                            "scope": "rust.expression.assignOp.left",
+                            "patterns": {
+                                "include": "#expression"
+                            }
+                        },
+                        "right": {
+                            "scope": "rust.expression.assignOp.right",
+                            "patterns": {
+                                "include": "#expression"
+                            }
+                        }
+                    }
+                },
+                {
+                    "comments": [
+                        "A binary operation: `a + b`, `a * b`"
+                    ],
+                    "scope": "rust.expression.binary",
+                    "match": "(?#<left>)(?#[rust.operator.binary.*])(?#<right>)",
+                    "captures": {
+                        "2": "rust.expression.binary.operator.binary"
+                    },
+                    "links": {
+                        "left": {
+                            "scope": "rust.expression.binary.left",
+                            "patterns": {
+                                "include": "#expression"
+                            }
+                        },
+                        "right": {
+                            "scope": "rust.expression.binary.right",
+                            "patterns": {
+                                "include": "#expression"
+                            }
+                        }
+                    }
+                },
+                {
+                    "comments": [
+                        "A blocked scope: `{ ... }`"
+                    ],
+                    "scope": "rust.expression.block",
+                    "match": "(?#<label>)(?#<block>)",
+                    "links": {
+                        "label": {
+                            "scope": "rust.expression.block.label",
+                            "match": "(?#<lifetime>)(?#[rust.token.colon])",
+                            "captures": {
+                                "2": "rust.expression.block.label.token.colon"
+                            },
+                            "links": {
+                                "lifetime": {
+                                    "scope": "rust.expression.block.label.lifetime",
+                                    "patterns": {
+                                        "include": "#lifetime"
+                                    }
+                                }
+                            }
+                        },
+                        "block": {
+                            "scope": "rust.expression.block.block-declaration", 
+                            "patterns": {
+                                "include": "#block"
+                            }
+                        }
+                    }
+                }
+            ]
+        },
+        "lifetime": {
+            "comments": "//TODO lifetime"
+        }
+    }
+}

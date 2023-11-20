@@ -1,0 +1,179 @@
+{
+    "information_for_contributors": [
+        "One-info",
+        "Two-info"
+    ],
+    "fileType": ".rs",
+    "version": "1.0.0",
+    "name": "Rust",
+    "scope": "source.rust",
+    "globals": {
+        "?#[NAME]": "match"
+    },
+    "comment": "group allowed in root of the file",
+    "patterns": [
+        {
+            "comments": [
+                "This is comment",
+                "This is comment",
+                "This is comment"
+            ],
+            "scope": "defination.function.rust",
+            "patterns": [
+                {
+                    "comment": "This is comment",
+                    "scope": "visibility",
+                    "match": "pub"
+                },
+                {
+                    "comment": "This is comment",
+                    "scope": "signature",
+                    "patterns": [
+                        {
+                            "comment": "This is comment",
+                            "scope": "token",
+                            "match": "fn"
+                        },
+                        {
+                            "comment": "This is comment",
+                            "scope": "scope",
+                            "match": "[a-z][A-Z]"
+                        },
+                        {
+                            "comment": "This is comment",
+                            "scope": "arguments",
+                            "begin": {
+                                "scope": "braket-begin",
+                                "match": "("
+                            },
+                            "end": {
+                                "scope": "braket-end",
+                                "match": ")"
+                            },
+                            "match": "(||variable||):(||data-type||)",
+                            "captures": {
+                                "1": {
+                                    "scope": "data-type.for.rust"
+                                },
+                                "3": {
+                                    "scope": "data-type.for.rust"
+                                }
+                            },
+                            "links": {
+                                "?#<variable>": {
+                                    "patterns": [
+                                        {
+                                            "include": "#variable"
+                                        },
+                                        {
+                                            "include": "#variable"
+                                        },
+                                        {
+                                            "include": "#variable"
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    "comment": "This is comment",
+                    "scope": "body",
+                    "begin": {
+                        "comment": "This is comment",
+                        "scope": "braket-begin",
+                        "indicator": "{"
+                    },
+                    "end": {
+                        "comment": "This is comment",
+                        "scope": "braket-end",
+                        "indicator": "}"
+                    },
+                    "captures": [
+                        {}
+                    ]
+                }
+            ]
+        },
+        {
+            "comment": "This is comment",
+            "scope": "keywords.rust",
+            "match-scope": "keywords.*.rust"
+        },
+        {
+            "comment": "This is comment",
+            "scope": "visibility.rust",
+            "match": "public|private|protected|static"
+        },
+        {
+            "comment": "This is comment",
+            "scope": "defination.function.rust",
+            "match": "Regex Expression",
+            "captures": {
+                "1": {
+                    "scope": "visibility.function.rust"
+                },
+                "2": {
+                    "scope": "signature.funciton.rust"
+                },
+                "3": {
+                    "scope": "body.funciton.rust"
+                }
+            },
+            "begin": "Regex Expression",
+            "end": "Regex Expression",
+            "contentName": "scope.name.rust",
+            "beginCaptures": {
+                "1": {
+                    "scope": "other.for.rust"
+                }
+            },
+            "endCaptures": {
+                "2": {
+                    "scope": "other.for.rust"
+                },
+                "3": {
+                    "scope": "other.for.rust"
+                }
+            },
+            "patterns": {
+                "include": "#commants"
+            }
+        },
+        {
+            "comment": "This is comment",
+            "scope": "loop.for.rust",
+            "match": "Regex Expression",
+            "begin": "Regex Expression",
+            "end": "Regex Expression",
+            "contentName": "scope.name.rust",
+            "patterns": {
+                "include": "souce.php"
+            }
+        },
+        {
+            "begin": "Regex Expression",
+            "end": "Regex Expression",
+            "patterns": {
+                "include": "$self"
+            }
+        },
+        {
+            "match": "Regex Expression"
+        }
+    ],
+    "repository": {
+        "comments1": {
+            "match": "Regex Expression"
+        },
+        "comments2": [
+            {
+                "match": "Regex Expression"
+            },
+            {
+                "match": "Regex Expression"
+            }
+        ]
+    }
+}

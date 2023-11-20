@@ -1,0 +1,67 @@
+%YAML 1.2
+---
+# http://www.sublimetext.com/docs/syntax.html
+name: mysample
+file_extensions:
+  - mysample
+scope: source.mysample
+contexts:
+  main:
+    - match: '(\b[a-z][a-z0-9]*)'
+      scope: keyword.mysample
+    - include: numeric
+    - match: '(\{)'
+      captures:
+        1: punctuation.mysample
+      push:
+        - match: '(\})'
+          captures:
+            1: punctuation.mysample
+          pop: true
+        - include: main__1
+    - match: (;)
+      scope: punctuation.mysample
+    - match: (\")
+      captures:
+        1: punctuation.mysample
+      push:
+        - meta_content_scope: text.mysample
+        - match: (\")
+          captures:
+            1: punctuation.mysample
+          pop: true
+    - match: (\()
+      captures:
+        1: punctuation.mysample
+      push:
+        - match: (\))
+          captures:
+            1: punctuation.mysample
+          pop: true
+        - include: main__3
+    - include: multi_line_comment
+    - match: (//.*)
+      scope: comment.mysample
+    - match: '([^\s])'
+      scope: invalid.mysample
+  main__1:
+    - include: main
+  main__2: []
+  main__3:
+    - include: numeric
+    - match: (,)
+      scope: punctuation.mysample
+  multi_line_comment:
+    - match: (/\*)
+      captures:
+        1: comment.mysample
+      push:
+        - meta_content_scope: comment.mysample
+        - match: (\*/)
+          captures:
+            1: comment.mysample
+          pop: true
+  multi_line_comment__1: []
+  numeric:
+    - match: (\b\d+)
+      scope: constant.numeric.mysample

@@ -1,0 +1,267 @@
+{
+    "information_for_contributors": [
+        "One-info",
+        "Two-info"
+    ],
+    "fileType": ".rs",
+    "version": "1.0.0",
+    "name": "Rust",
+    "scope": "rust.source",
+    "options": {
+        "indentation": {
+            "?#[rust.space]" : "\\s"
+        },
+        "conventions": {
+            "?#[rust.ident.lowercase]"             : "()",
+            "?#[rust.ident.UPPERCASE]"             : "()",
+            "?#[rust.ident.PascalCase]"            : "()",
+            "?#[rust.ident.camelCase]"             : "()",
+            "?#[rust.ident.snake_case]"            : "()",
+            "?#[rust.ident.SCREAMING_SNAKE_CASE]"  : "()",
+            "?#[rust.ident.kebab-case]"            : "()",
+            "?#[rust.ident.SCREAMING-KEBAB-CASE]"  : "()",
+
+            "struct.token.declaration.struct.rust"  : "(?#[token.ident.PascalCase])"
+        }
+    },
+    "globals": {
+        "?#[rust.space]": "\\s+(?#Spacing and Minimum version for indentation)",
+
+        "?#[rust.delimiter.brace.begin]"    : "{",
+        "?#[rust.delimiter.brace.end]"      : "}",
+        "?#[rust.delimiter.bracket.begin]"  : "[",
+        "?#[rust.delimiter.bracket.end]"    : "]",
+        "?#[rust.delimiter.paren.begin]"    : "(",
+        "?#[rust.delimiter.paren.end]"      : ")",
+        "?#[rust.delimiter.group]"          : " ",
+
+        "?#[rust.punctuation.comma]"        : ",",
+        "?#[rust.punctuation.semi]"         : ";",
+        "?#[rust.punctuation.colon]"        : ":",
+
+        "?#[rust.keywords]"          : "(abstract|as|async|auto|await|become|box|break|const|continue|crate|default|do|dyn|else|enum|extern|final|fn|for|if|impl|in|let|loop|macro|match|mod|move|mut|override|priv|pub|ref|return|Self|self|static|struct|super|trait|try|type|typeof|union|unsafe|unsized|use|virtual|where|while|yield)",
+        "?#[rust.identifier]"        : "([a-zA-Z0-9_]+)",
+
+        "?#[rust.token.abstract]"     : "(abstract)",
+        "?#[rust.token.as]"           : "(as)",
+        "?#[rust.token.async]"        : "(async)",
+        "?#[rust.token.auto]"         : "(auto)",
+        "?#[rust.token.await]"        : "(await)",
+        "?#[rust.token.become]"       : "(become)",
+        "?#[rust.token.box]"          : "(box)",
+        "?#[rust.token.break]"        : "(break)",
+        "?#[rust.token.const]"        : "(const)",
+        "?#[rust.token.continue]"     : "(continue)",
+        "?#[rust.token.crate]"        : "(crate)",
+        "?#[rust.token.default]"      : "(default)",
+        "?#[rust.token.do]"           : "(do)",
+        "?#[rust.token.dyn]"          : "(dyn)",
+        "?#[rust.token.else]"         : "(else)",
+        "?#[rust.token.enum]"         : "(enum)",
+        "?#[rust.token.extern]"       : "(extern)",
+        "?#[rust.token.final]"        : "(final)",
+        "?#[rust.token.fn]"           : "(fn)",
+        "?#[rust.token.for]"          : "(for)",
+        "?#[rust.token.if]"           : "(if)",
+        "?#[rust.token.impl]"         : "(impl)",
+        "?#[rust.token.in]"           : "(in)",
+        "?#[rust.token.let]"          : "(let)",
+        "?#[rust.token.loop]"         : "(loop)",
+        "?#[rust.token.macro]"        : "(macro)",
+        "?#[rust.token.match]"        : "(match)",
+        "?#[rust.token.mod]"          : "(mod)",
+        "?#[rust.token.move]"         : "(move)",
+        "?#[rust.token.mut]"          : "(mut)",
+        "?#[rust.token.override]"     : "(override)",
+        "?#[rust.token.priv]"         : "(priv)",
+        "?#[rust.token.pub]"          : "(pub)",
+        "?#[rust.token.ref]"          : "(ref)",
+        "?#[rust.token.return]"       : "(return)",
+        "?#[rust.token.selfType]"     : "(Self)",
+        "?#[rust.token.selfValue]"    : "(self)",
+        "?#[rust.token.static]"       : "(static)",
+        "?#[rust.token.struct]"       : "(struct)",
+        "?#[rust.token.super]"        : "(super)",
+        "?#[rust.token.trait]"        : "(trait)",
+        "?#[rust.token.try]"          : "(try)",
+        "?#[rust.token.type]"         : "(type)",
+        "?#[rust.token.typeof]"       : "(typeof)",
+        "?#[rust.token.union]"        : "(union)",
+        "?#[rust.token.unsafe]"       : "(unsafe)",
+        "?#[rust.token.unsized]"      : "(unsized)",
+        "?#[rust.token.use]"          : "(use)",
+        "?#[rust.token.virtual]"      : "(virtual)",
+        "?#[rust.token.where]"        : "(where)",
+        "?#[rust.token.while]"        : "(while)",
+        "?#[rust.token.yield]"        : "(yield)",
+        "?#[rust.token.add]"          : "(+)",
+        "?#[rust.token.addEq]"        : "(+=)",
+        "?#[rust.token.and]"          : "(&)",
+        "?#[rust.token.andAnd]"       : "(&&)",
+        "?#[rust.token.andEq]"        : "(&=)",
+        "?#[rust.token.at]"           : "(@)",
+        "?#[rust.token.bang]"         : "(!)",
+        "?#[rust.token.caret]"        : "(^)",
+        "?#[rust.token.caretEq]"      : "(^=)",
+        "?#[rust.token.colon]"        : "(:)",
+        "?#[rust.token.colon2]"       : "(::)",
+        "?#[rust.token.comma]"        : "(,)",
+        "?#[rust.token.div]"          : "(/)",
+        "?#[rust.token.divEq]"        : "(/=)",
+        "?#[rust.token.dollar]"       : "($)",
+        "?#[rust.token.dot]"          : "(.)",
+        "?#[rust.token.dot2]"         : "(..)",
+        "?#[rust.token.dot3]"         : "(...)",
+        "?#[rust.token.dotDotEq]"     : "(..=)",
+        "?#[rust.token.eq]"           : "(=)",
+        "?#[rust.token.eqEq]"         : "(==)",
+        "?#[rust.token.ge]"           : "(>=)",
+        "?#[rust.token.gt]"           : "(>)",
+        "?#[rust.token.le]"           : "(<=)",
+        "?#[rust.token.lt]"           : "(<)",
+        "?#[rust.token.mulEq]"        : "(*=)",
+        "?#[rust.token.ne]"           : "(!=)",
+        "?#[rust.token.or]"           : "(|)",
+        "?#[rust.token.orEq]"         : "(|=)",
+        "?#[rust.token.orOr]"         : "(||)",
+        "?#[rust.token.pound]"        : "(#)",
+        "?#[rust.token.question]"     : "(?)",
+        "?#[rust.token.rArrow]"       : "(->)",
+        "?#[rust.token.lArrow]"       : "(<-)",
+        "?#[rust.token.rem]"          : "(%)",
+        "?#[rust.token.remEq]"        : "(%=)",
+        "?#[rust.token.fatArrow]"     : "(=>)",
+        "?#[rust.token.semi]"         : "(;)",
+        "?#[rust.token.shl]"          : "(<<)",
+        "?#[rust.token.shlEq]"        : "(<<=)",
+        "?#[rust.token.shr]"          : "(>>)",
+        "?#[rust.token.shrEq]"        : "(>>=)",
+        "?#[rust.token.star]"         : "(*)",
+        "?#[rust.token.sub]"          : "(-)",
+        "?#[rust.token.subEq]"        : "(-=)",
+        "?#[rust.token.tilde]"        : "(~)",
+        "?#[rust.token.underscore]"   : "(_)"
+    },
+    "comment": "group allowed in root of the file",
+    "patterns": [
+        {
+            "comments": [
+                "This is comment",
+                "This is comment"
+            ],
+            "scope": "rust.struct.defination",
+            "match": "(?#<attributes>)(?#[rust.space])(?#<visibility>)(?#[rust.space])(?#<struct-token>)(?#[rust.space])(?#<identifier>)(?#[rust.space])(?#<generics>)(?#[rust.space])(?#<fields>)",
+            "links": {
+                "attributes": {
+                    "patterns": {
+                        "comment": "This is comment",
+                        "scope": "rust.struct.attributes",
+                        "include": "#attributes"
+                    }
+                },
+                "visibility": {
+                    "patterns": {
+                        "comment": "This is comment",
+                        "scope": "rust.struct.visibility",
+                        "include": "#visibility"
+                    }
+                },
+                "struct-token": {
+                    "comment": "This is comment",
+                    "scope": "rust.struct.token.struct",
+                    "match": "(?#[rust.token.struct])"
+                },
+                "identifier": {
+                    "comment": "This is comment",
+                    "scope": "rust.struct.identifier",
+                    "match": "(?#[rust.identifier])"
+                },
+                "generics": {
+                    "patterns": {
+                        "comment": "This is comment",
+                        "scope": "rust.struct.generics",
+                        "include": "#generics"
+                    }
+                },
+                "fields": {
+                    "comment": "This is comment",
+                    "scope": "rust.struct.fields",
+                    "begin": "(?#[rust.delimiter.brace.begin])(?#[rust.space])",
+                    "beginCaptures": {
+                        "0": "rust.struct.fields.delimiter.begin"
+                    },
+                    "end": "(?#[rust.delimiter.brace.end])",
+                    "endCaptures": {
+                        "0": "rust.struct.fields.delimiter.end"
+                    },
+                    "patterns": {
+                        "comment": "This is comment",
+                        "scope": "rust.struct.field.list",
+                        "match": "((?#<field>)(?#[rust.space])((?#[rust.token.comma])))+",
+                        "captures": {
+                            "2": "rust.struct.field.punctuation.comma"
+                        },
+                        "links": {
+                            "field": {
+                                "comment": "This is comment",
+                                "scope": "rust.struct.field",
+                                "match": "(?#<attributes>)(?#[rust.space])(?#<visibility>)(?#[rust.space])(?#<identifier>)(?#[rust.space])(?#[rust.punctuation.colon])(?#[rust.space])(?#<typePath>)",
+                                "captures": {
+                                    "4": "rust.struct.field.punctuation.colon"
+                                },
+                                "links": {
+                                    "attributes": {
+                                        "patterns": {
+                                            "comment": "This is comment",
+                                            "scope": "rust.struct.field.attributes",
+                                            "include": "#attributes"
+                                        }
+                                    },
+                                    "visibility": {
+                                        "patterns": {
+                                            "comment": "This is comment",
+                                            "scope": "rust.struct.field.visibility",
+                                            "include": "#visibility"
+                                        }
+                                    },
+                                    "identifier": {
+                                        "comment": "This is comment",
+                                        "scope": "rust.struct.field.identifier",
+                                        "match": "(?#[rust.identifier])"
+                                    },
+                                    "typePath": {
+                                        "patterns": {
+                                            "comment": "This is comment",
+                                            "scope": "rust.struct.field.typePath",
+                                            "include": "#typePath"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    ],
+    "repository": {
+        "attributes": {
+            "match": "Regex Expression"
+        },
+        "visibility": [
+            {
+                "match": "Regex Expression"
+            }
+        ],
+        "generics": [
+            {
+                "match": "Regex Expression"
+            }
+        ],
+        "typePath": [
+            {
+                "match": "Regex Expression"
+            }
+        ]
+    }
+}

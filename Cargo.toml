@@ -1,0 +1,22 @@
+[package]
+name = "syn-to-tiler"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+walkdir = "2.3.2"
+regex = "1.7"
+quote = "1.0"
+fancy-regex = "0.10.0"
+# syn = { path = "../syn", features = ["derive"] }
+syn = { version = "1.0", features = ["parsing", "full", "extra-traits"] }
+
+
+[dependencies.regex-syntax]
+version = "0.6"
+
+# macro_lib = {path = "./macro-lib"}

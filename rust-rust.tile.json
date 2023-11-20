@@ -1,0 +1,72 @@
+{
+    "fileType": ".rs",
+    "version": "1.0.0",
+    "name": "Rust-Rust",
+    "scope1": "rust.source",
+    "scope2": "rust.source",
+    "features": "one-one",
+    "wasm-script": [
+        "here script to track all variables in tiling process for mut, ref, generic, lifetime, clausers, "
+    ],
+    "dependencies": [
+        {
+            "name": "rust-rust",
+            "version": "1.0.0",
+            "optional": true,
+            "default-features": false,
+            "feature": ["one-one","file-file"]
+        }
+    ],
+    "options": {
+
+    },
+    "rules": [
+        {
+            "name": "",
+            "rules": {
+                "from": "( (rust.fun.name) + (rust.fn.token.fn) ).toCamelCase()",
+                "to": "java.fn.name"
+            }
+        },
+        {
+            "name": "",
+            "rules": {
+                "from": "rust.fn.name regex :([A-Z])([a-z])([0-9])",
+                "captures": {
+                    "1": "$name.capital",
+                    "2": "$name.small",
+                    "3": "$name.number"
+                },
+                "to": "java.fn.name"
+            }
+        },
+        {
+            "name": "function",
+            "type": "one-to-one",
+            "rule": [
+                {
+                    "name": "function.definition",
+                    "type": "one-to-one",
+                    "rule": [
+                        {
+                            "name": "function.name",
+                            "type": "one-to-one",
+                            "rule": {
+                                "from": "rust.fn.name",
+                                "to": "java.fn.name"
+                            }
+                        },
+                        {
+                            "name": "function.arguments",
+                            "type": "one-to-one",
+                            "rule": {
+                                "from": "rust.fn.arguments",
+                                "to": "java.fn.name"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
